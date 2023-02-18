@@ -1,0 +1,90 @@
+key_bindings:
+  - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }
+
+font:
+  offset:
+      x: 0    # For letter spacing.
+      y: 0    # For line spacing.
+  normal:
+    # family: Terminus
+    # style: Bold
+    # family: OpenDyslexicMono
+    # family: DejaVu Sans Mono
+    family: Spleen
+  size: 16.0
+  # italic:
+  #   family: Terminus
+  #   style: Bold
+  #   # family: OpenDyslexicMono
+  #   # family: DejaVu Sans Mono
+  #   # family: Monaco
+  # size: 16.0
+  # bold-italic:
+  #   family: Terminus
+  #   style: Bold
+  #   # family: OpenDyslexicMono
+  #   # family: DejaVu Sans Mono
+  #   # family: Monaco
+  # size: 16.0
+
+draw_bold_text_with_bright_colors: true
+
+window:
+  opacity: 0.7
+
+color_schemes:
+
+  rofl: &rofl
+   # Default colors
+   primary:
+     background: '#000000'
+     foreground: '#cccccc'
+   # Normal colors
+   normal:
+     black:   '#000000'
+     red:     '#be1e54'
+     green:   '#2e9842'
+     yellow:  '#c38a31'
+     blue:    '#28456d'
+     magenta: '#cd00cd'
+     cyan:    '#008dc1'
+     white:   '#cccccc'
+
+   # Bright colors
+   bright:
+     black:   '#7f7f7f'
+     red:     '#fe6187'
+     green:   '#67cc72'
+     yellow:  '#d6c132'
+     blue:    '#405c8b'
+     magenta: '#ff00ff'
+     cyan:    '#00bcf1'
+     white:   '#e5e5e5'
+
+  kekw: &kekw
+  # Normal colors
+   primary:
+     background: '#000000'
+     foreground: '#bbbbbb'
+   normal:
+     black:   '#1d1f21'
+     red:     '#cc6666'
+     green:   '#b5bd68'
+     yellow:  '#f0c674'
+     blue:    '#81a2be'
+     magenta: '#b294bb'
+     cyan:    '#8abeb7'
+     white:   '#cccccc'
+
+    # Bright colors
+   bright:
+     black:   '#666666'
+     red:     '#d54e53'
+     green:   '#b9ca4a'
+     yellow:  '#e7c547'
+     blue:    '#7aa6da'
+     magenta: '#c397d8'
+     cyan:    '#70c0b1'
+     white:   '#e5e5e5'
+
+colors: *kekw
