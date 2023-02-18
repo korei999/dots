@@ -1,0 +1,94 @@
+{
+	"layer": "top",	
+	"position": "top",
+    "height": 30,
+
+
+    "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
+    "modules-center": [],
+    "modules-right": ["keyboard-state", "custom/player", "pulseaudio", "custom/gpu", "clock", "sway/language", "tray"],
+
+
+	"sway/workspaces": {
+        "disable-scroll": true,
+        "disable-markup": true,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "I",
+            "2": "II",
+            "3": "III",
+            "4": "IV",
+            "5": "V",
+            "6": "VI",
+            "7": "VII",
+            "8": "VIII",
+            "9": "IX",
+            "10": "X",
+            "urgent": "",
+            "focused": "",
+            /* "default": "" */
+      }
+},
+
+
+	"sway/window": {
+    	"format": "{}",
+    	"max-length": 150
+},
+
+    "sway/language": {
+        "format": "{short}",
+        /* "on-click": "swaymsg input type:keyboard xkb_switch_layout next", */
+},
+
+    "keyboard-state": {
+        "capslock": true,
+        "format": "{icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": "",
+        }
+    },
+
+    "tray": {
+        "icon-size": 22,
+        "spacing": 15
+},
+
+
+    "clock": {
+        "format": "{:%a %b %e  %I:%M %p}",
+        "interval": 30,
+        "on-click-right": "foot --hold -e cal -y",
+        "on-click": "waycal.sh",
+},
+
+    "pulseaudio": {
+        "format": "{icon} {volume}% ",
+        "format-bluetooth": " {volume}% ",
+        "format-muted":"婢 Mute ",
+        "interval": 60,
+
+        "format-icons": {
+        "default": [" "]
+},
+            
+       "on-click": "foot -e pulsemixer"    
+
+
+},
+
+    "custom/gpu": {
+        "format": "  GPU {}  ",
+        "exec": "sensors | awk '/^junction/ { print $2}'",
+        "interval": 1,
+        "on-click": "foot -e sudo watch -n 0.5 cat /sys/kernel/debug/dri/0/amdgpu_pm_info"
+},
+
+    "custom/player": {
+           "format": "   {}  ",
+            "exec": "playerctl metadata --format \" {{ trunc(title, 25) }} \"",
+            "interval": 1
+},
+
+}
