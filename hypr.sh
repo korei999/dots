@@ -18,7 +18,4 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 export SDL_VIDEODRIVER=wayland
 export PIPEWIRE_LATENCY="128/48000"
 
-# export LOCK_BG="/home/korei/Pictures/wallpapers/SetupLenovo.png"
-# export LOCK="swaylock -f -c 121212 -i $LOCK_BG -s fill --font Spleen --font-size 28 --indicator-radius 90 --indicator-thickness 15"
-
 Hyprland
